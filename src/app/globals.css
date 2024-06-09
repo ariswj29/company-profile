@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
