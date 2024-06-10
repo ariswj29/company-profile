@@ -9,19 +9,19 @@ import Image from 'next/image';
 
 
 export default function Slider() {
-    const link = "http://127.0.0.1:5500/public/assets/";
+    // const link = "http://127.0.0.1:5500/public/assets/";
     const sliders = [
         {
             "id": 2,
-            "image": "images.jpeg",
+            "image": "/assets/images.jpeg",
         },
         {
             "id": 1,
-            "image": "images2.png",
+            "image": "/assets/images2.png",
         },
         {
             "id": 3,
-            "image": "images3.jpeg",
+            "image": "/assets/images3.jpeg",
         }
     ]
     console.log(sliders)
@@ -55,7 +55,8 @@ export default function Slider() {
                   key={i}
                   className="slider_1 md:py-[140px] sm:py-0 px-[0px]"
                   style={{
-                    backgroundImage: `url('${link}${slider.image}')`,
+                    // backgroundImage: `url('${link}${slider.image}')`,
+                    backgroundImage: `url('${slider.image}')`,
                     textShadow: "rgb(61 61 61) 0px 0px 25px, rgb(61 61 61) 0px 0px 15px",
                     backgroundSize: "cover",
                     backgroundPosition: "center",

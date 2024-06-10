@@ -13,7 +13,7 @@ export default function Footer() {
                     <h3 className="text-2xl font-bold">Menu</h3>
                     <ul className="mt-2">
                         <li><Link href="/" className="nav-link">Home</Link></li>
-                        <li><Link href="/about" className="nav-link">About</Link></li>
+                        <li><Link href="/about-us" className="nav-link">About</Link></li>
                         <li><Link href="/product" className="nav-link">Services</Link></li>
                         <li><Link href="/teams" className="nav-link">Teams</Link></li>
                     </ul>

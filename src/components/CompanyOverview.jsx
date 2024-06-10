@@ -20,7 +20,7 @@ export default function CompanyOverview() {
                     accusantium aspernatur.
                 </p>
 
-                <Link href="/about">
+                <Link href="/about-us">
                     <p className="bg-blue-500 w-fit px-2 py-1 text-white rounded-lg">Read More</p>
                 </Link>
             </div>

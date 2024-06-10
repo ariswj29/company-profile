@@ -17,7 +17,7 @@ export default function Header() {
                             <Link href="/" className={pathname === "/" ? "active" : "nav-link" }>Home</Link>
                         </li>
                         <li>
-                            <Link href="/about" className={pathname === "/about" ? "active" : "nav-link" }>About</Link>
+                            <Link href="/about-us" className={pathname === "/about-us" ? "active" : "nav-link" }>About</Link>
                         </li>
                         <li>
                             <Link href="/product" className={pathname === "/product" ? "active" : "nav-link" }>Product</Link>
