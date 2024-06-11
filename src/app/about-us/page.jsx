@@ -31,7 +31,7 @@ export default function page(){
     ]
 
     return (
-        <section className="grid grid-cols-2 gap-8 p-8 px-40 justify-center items-center">
+        <section className="grid grid-cols-2 gap-8 p-8 max-w-screen-xl mx-auto items-center">
             <div className="gap-4">
                 <h2 className="font-bold text-4xl py-8"> About Us </h2>
                 <p>

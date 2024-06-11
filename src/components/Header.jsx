@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function Header() {
     const pathname = usePathname();
     return (
-        <header className="grid grid-cols-3 py-6 px-12 bg-inherit sticky top-0 z-50">
+        <header className="grid grid-cols-3 py-6 px-20 bg-inherit sticky top-0 z-50">
             <div className="col-span-2">
                 <h1>RizzCorps</h1>
             </div>
@@ -20,7 +20,7 @@ export default function Header() {
                             <Link href="/about-us" className={pathname === "/about-us" ? "active" : "nav-link" }>About</Link>
                         </li>
                         <li>
-                            <Link href="/product" className={pathname === "/product" ? "active" : "nav-link" }>Product</Link>
+                            <Link href="/services" className={pathname === "/services" ? "active" : "nav-link" }>Services</Link>
                         </li>
                         <li>
                             <Link href="/teams" className={pathname === "/teams" ? "active" : "nav-link" }>Teams</Link>

@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import SkeletonComponent from './Skeleton';
+import SkeletonComponent from '../Skeleton';
 import { Autoplay, Pagination, Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 import Image from 'next/image';
 
@@ -24,7 +24,6 @@ export default function Slider() {
             "image": "/assets/images3.jpeg",
         }
     ]
-    console.log(sliders)
     
     return (
         sliders.length === 0 ? (

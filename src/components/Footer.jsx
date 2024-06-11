@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <footer className="w-full bg-[#d6dbdc] p-8">
-            <div className="grid grid-cols-5 gap-4 px-20">
+            <div className="grid grid-cols-5 gap-4 max-w-screen-xl mx-auto">
                 <div className="col-span-2 px-6">
                     <h3 className="text-2xl font-bold">RizzCorps.</h3>
                     <p className="mt-2 text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate, voluptates, voluptatum, quod laboriosam doloremque quidem dolorem quas accusantium aspernatur.

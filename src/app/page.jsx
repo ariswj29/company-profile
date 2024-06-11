@@ -1,13 +1,13 @@
-import CompanyOverview from "@/components/CompanyOverview";
-import Service from "@/components/Service";
-import Slider from "@/components/Slider";
-import Testimoni from "@/components/Testimoni";
+import CompanyOverview from "@/components/sectionHomepage/CompanyOverview";
+import Service from "@/components/sectionHomepage/Service";
+import Slider from "@/components/sectionHomepage/Slider";
+import Testimoni from "@/components/sectionHomepage/Testimoni";
 
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-between">
-        <Slider />
+      <Slider />
+      <main className="max-w-screen-xl mx-auto">
         <CompanyOverview />
         <Service />
         <Testimoni />

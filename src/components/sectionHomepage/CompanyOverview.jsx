@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function CompanyOverview() {
     return (
-        <section className="grid grid-cols-2 gap-4 p-20 px-40 justify-center items-center">
+        <section className="grid grid-cols-2 gap-8 p-8 items-center">
             <div className="gap-4">
-                <h2 className="font-bold text-4xl py-8"> Company Overview </h2>
+                <h3 className="font-bold text-4xl py-8"> Company Overview </h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit
                     Quisquam, voluptate, voluptates, voluptatum, quod

@@ -7,7 +7,6 @@ export default function CardTeam({data, index}) {
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleFlip = () => {
-        console.log('Flipping card');
         setIsFlipped(!isFlipped);
     };
 
