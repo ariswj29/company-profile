@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -5,7 +6,7 @@ export default function Footer() {
         <footer className="w-full bg-[#d6dbdc] p-8">
             <div className="grid grid-cols-5 gap-4 max-w-screen-xl mx-auto">
                 <div className="col-span-2 px-6">
-                    <h3 className="text-2xl font-bold">RizzCorps.</h3>
+                    <Image src="/assets/logo.png" alt="RizzCorps" width={150} height={25} />
                     <p className="mt-2 text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate, voluptates, voluptatum, quod laboriosam doloremque quidem dolorem quas accusantium aspernatur.
                     </p>
                 </div>

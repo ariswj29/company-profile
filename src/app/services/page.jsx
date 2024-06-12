@@ -1,21 +1,20 @@
 import CardService from "@/components/CardService";
 import { createClient } from "contentful";
-import Link from "next/link";
 
 async function getService(){
-    try{
-      const client = createClient({
-        space: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      });
-  
-      const res = await client.getEntries({ content_type: "ourServices" });
-      console.log(res.items);
-      return res.items;
-    }catch(error){
-      console.error(error);
-    }
+  try{
+    const client = createClient({
+      space: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    });
+
+    const res = await client.getEntries({ content_type: "ourServices" });
+    console.log(res.items);
+    return res.items;
+  }catch(error){
+    console.error(error);
   }
+}
 
 export default async function Page() {
     const services = await getService();

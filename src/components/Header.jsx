@@ -1,16 +1,17 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
     const pathname = usePathname();
     return (
-        <header className="grid grid-cols-3 py-6 px-20 bg-inherit sticky top-0 z-50">
-            <div className="col-span-2">
-                <h1>RizzCorps</h1>
+        <header className="grid grid-cols-3 px-20 bg-inherit sticky top-0 z-50">
+            <div className="col-span-2 py-2">
+                <Image src="/assets/logo-with-tagline.png" alt="RizzCorps" width={150} height={25} />
             </div>
-            <div className="col-span-1">
+            <div className="col-span-1 py-6">
                 <nav>
                     <ul className="grid grid-cols-4 gap-4">
                         <li>

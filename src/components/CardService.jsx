@@ -12,7 +12,7 @@ export default function CardService({ service, key }) {
         <div key={key} className="flex flex-col gap-4 bg-[#d6dbdc] rounded-lg items-center p-4">
             <Image src={`https:${icon.fields.file.url}`} width={100} height={100} className="h-24 w-24 rounded-full" alt={name} />
             <h4 className="font-bold text-2xl"> {name} </h4>
-            <p className="">
+            <p className="text-justify">
                 {description}
             </p>
             {pathname == "/services" && (
