@@ -1,7 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  FaSquareFacebook,
+  FaSquareWhatsapp,
+  FaSquareEnvelope,
+  FaLinkedin,
+} from "react-icons/fa6";
 
 export default function Footer() {
+  const socialMedia = [
+    {
+      icon: <FaSquareEnvelope size={30} />,
+      link: `mailto:?subject&body`,
+    },
+    {
+      icon: <FaSquareFacebook size={30} />,
+      link: `https://www.facebook.com/`,
+    },
+    {
+      icon: <FaLinkedin size={30} />,
+      link: `https://www.linkedin.com/`,
+    },
+    {
+      icon: <FaSquareWhatsapp size={30} />,
+      link: `https://api.whatsapp.com/send?text`,
+    },
+  ];
+
   return (
     <footer className="w-full bg-[#bfddd2] p-8">
       <div className="grid grid-cols-5 gap-4 max-w-screen-xl mx-auto">
@@ -51,22 +76,14 @@ export default function Footer() {
           <p className="mt-2">
             Address: Jl Dipatiukur 123, Kota Bandung, Jawa Barat, Indonesia
           </p>
-          <ul className="grid grid-cols-5">
-            <li>
-              <Link href="mailto:" className="text-blue-500">
-                Email
-              </Link>
-            </li>
-            <li>
-              <Link href="tel:" className="text-blue-500">
-                Phone
-              </Link>
-            </li>
-            <li>
-              <Link href="https://www.linkedin.com/" className="text-blue-500">
-                Linkedin
-              </Link>
-            </li>
+          <ul className="flex gap-2">
+            {socialMedia.map((item, index) => (
+              <li key={index}>
+                <Link href={item.link} className="nav-link">
+                  {item.icon}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

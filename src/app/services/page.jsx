@@ -7,7 +7,6 @@ async function getService() {
     const client = contentfulClient();
 
     const res = await client.getEntries({ content_type: "ourServices" });
-    console.log(res.items);
     return res.items;
   } catch (error) {
     console.error(error);
