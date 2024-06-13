@@ -28,9 +28,9 @@ export default async function Page({ params }) {
       <div className="grid grid-cols-3 gap-8 items-center">
         <Link
           href="/services"
-          className="w-fit mx-2 border-2 border-slate-500 px-2 text-3xl rounded-lg"
+          className="w-fit mx-2 border-2 border-slate-500 hover:border-[3px] hover:border-slate-700 px-2 text-3xl rounded-lg"
         >
-          ← Back
+          {`<-`} Back
         </Link>
         <h3 className="col-span-2 font-bold text-4xl">Our Services - {name}</h3>
       </div>

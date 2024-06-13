@@ -11,10 +11,10 @@ import {
   Mousewheel,
   Keyboard,
 } from "swiper/modules";
-import Image from "next/image";
 import { contentfulClient } from "@/helpers/contentful-client";
+import { sliders } from "@/data/data";
 
-// Pake Contentful error terus tidak bisa di slide, jadi saya ganti dengan static image
+// Pake Contentful error terus image nya tidak bisa slide, jadi saya ganti pake data.js
 
 // async function getSliders() {
 //   try {
@@ -26,28 +26,8 @@ import { contentfulClient } from "@/helpers/contentful-client";
 //   }
 // }
 
-const sliders = [
-  {
-    id: 1,
-    image: "/assets/slider1.png",
-  },
-  {
-    id: 2,
-    image: "/assets/slider2.png",
-  },
-  {
-    id: 3,
-    image: "/assets/slider3.png",
-  },
-  {
-    id: 4,
-    image: "/assets/slider4.png",
-  },
-];
-
 export default function Slider() {
   // const sliders = await getSliders();
-
   return sliders.length === 0 ? (
     <SkeletonComponent
       className="mb-16"
@@ -69,10 +49,10 @@ export default function Slider() {
       modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
       className="mySwiper mb-8 w-full h-[180px] md:h-[calc(100vh-5rem)]"
     >
-      {sliders.map((slider) => (
+      {sliders.map((slider, key) => (
         <SwiperSlide
           // key={slider.sys.id}
-          key={slider.id}
+          key={key}
           className="slider_1 md:py-[140px] sm:py-0 px-[0px]"
           style={{
             // backgroundImage: `url(https:${slider.fields.image.fields.file.url})`,
