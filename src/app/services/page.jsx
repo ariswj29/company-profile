@@ -17,8 +17,8 @@ export default async function Page() {
   const services = await getService();
 
   return (
-    <section className="grid grid-cols-3 max-w-screen-xl mx-auto gap-8 p-8 mb-16">
-      <h3 className="font-bold text-4xl col-span-3 py-4 text-center">
+    <section className="grid md:grid-cols-3 sm:grid-cols-1 max-w-screen-xl mx-auto gap-8 p-8 mb-16">
+      <h3 className="font-bold text-4xl md:col-span-3 py-4 text-center">
         {" "}
         Our Services{" "}
       </h3>

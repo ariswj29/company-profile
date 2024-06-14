@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#bfddd2] p-8">
-      <div className="grid grid-cols-5 gap-4 max-w-screen-xl mx-auto">
+      <div className="grid md:grid-cols-5 sm:grid-cols-1 gap-4 max-w-screen-xl mx-auto">
         <div className="col-span-2 px-6">
           <Image
             src="/assets/logo.png"
@@ -21,7 +21,7 @@ export default function Footer() {
             clients' expectations.
           </p>
         </div>
-        <div>
+        <div className="px-6">
           <h3 className="text-2xl font-bold">Menu</h3>
           <ul className="mt-2">
             {navbars.map((item, index) => (
@@ -33,7 +33,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 px-6">
           <h3 className="text-2xl font-bold">Information Contact</h3>
           <p className="mt-2">
             Address: Jl Dipatiukur 123, Kota Bandung, Jawa Barat, Indonesia

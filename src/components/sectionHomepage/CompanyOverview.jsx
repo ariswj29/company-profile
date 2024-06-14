@@ -9,7 +9,7 @@ export default function CompanyOverview() {
 
   return (
     <section
-      className={`grid grid-cols-2 gap-8 p-8 items-center ${
+      className={`grid md:grid-cols-2 sm:grid-cols-1 gap-8 p-8 items-center ${
         pathname == "/" ? "" : "max-w-screen-xl mx-auto"
       }`}
     >

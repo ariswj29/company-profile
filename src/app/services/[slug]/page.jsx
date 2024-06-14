@@ -25,14 +25,16 @@ export default async function Page({ params }) {
 
   return (
     <section className="max-w-screen-xl mx-auto gap-8 p-8 mb-16">
-      <div className="grid grid-cols-3 gap-8 items-center">
+      <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-8 items-center">
         <Link
           href="/services"
-          className="w-fit mx-2 border-2 border-slate-500 hover:border-[3px] hover:border-slate-700 px-2 text-3xl rounded-lg"
+          className="w-fit mx-2 border-2 border-slate-500 hover:border-[3px] hover:border-slate-700 px-2 md:text-3xl sm:text-lg rounded-lg"
         >
           {`<-`} Back
         </Link>
-        <h3 className="col-span-2 font-bold text-4xl">Our Services - {name}</h3>
+        <h3 className="md:col-span-2 font-bold text-4xl">
+          Our Services - {name}
+        </h3>
       </div>
       <div className="flex flex-col gap-4 rounded-lg items-center p-4">
         <Image
