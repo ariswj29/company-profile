@@ -56,7 +56,7 @@ export const abouts = [
   {
     id: 1,
     title: "Company Overview",
-    description: `RizzCorps is a dynamic and innovative web development company dedicated to crafting top-notch digital experiences. Founded with a passion for technology and a commitment to excellence, we specialize in creating customized websites that not only meet but exceed our clients' expectations. Our team of skilled developers, designers, and strategists work collaboratively to deliver seamless, user-friendly, and visually stunning websites tailored to your unique business needs.`,
+    description: `RizzCorps is a dynamic and innovative web development company dedicated to crafting top notch digital experiences. Founded with a passion for technology and a commitment to excellence, we specialize in creating customized websites that not only meet but exceed our clients' expectations. Our team of skilled developers, designers, and strategists work collaboratively to deliver seamless, user friendly, and visually stunning websites tailored to your unique business needs.`,
   },
   {
     id: 2,

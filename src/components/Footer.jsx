@@ -15,7 +15,7 @@ export default function Footer() {
           />
           <p className="mt-2 text-justify">
             RizzCorps is a dynamic and innovative web development company
-            dedicated to crafting top-notch digital experiences. Founded with a
+            dedicated to crafting top notch digital experiences. Founded with a
             passion for technology and a commitment to excellence, we specialize
             in creating customized websites that not only meet but exceed our
             clients' expectations.
