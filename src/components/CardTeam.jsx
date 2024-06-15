@@ -50,7 +50,11 @@ export default function CardTeam({ data, index }) {
                 {", "} {data.location.state}
               </p>
               <p className="text-xs">
-                <FaEnvelope className="inline" /> {data.email}
+                <FaEnvelope className="inline" />{" "}
+                {data.email
+                  .slice(-18)
+                  .replace(".", "")
+                  .replace("@examplecom", "@gmail.com")}
               </p>
               <p className="text-xs">
                 <FaPhone className="inline" /> {data.phone}

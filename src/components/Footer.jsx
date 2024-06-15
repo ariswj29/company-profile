@@ -26,7 +26,7 @@ export default function Footer() {
           <ul className="mt-2">
             {navbars.map((item, index) => (
               <li key={index}>
-                <Link href={item.link} className="nav-link">
+                <Link href={item.link} className="nav-link" alt={item.title}>
                   {item.title}
                 </Link>
               </li>
