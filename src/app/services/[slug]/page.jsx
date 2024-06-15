@@ -4,6 +4,15 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Link from "next/link";
 import { contentfulClient } from "@/helpers/contentful-client";
 
+export async function generateMetadata({ params }) {
+  const [services] = await getSlug(params.slug);
+  const { name, description } = services.fields;
+  return {
+    title: name,
+    description,
+  };
+}
+
 async function getSlug(slug) {
   try {
     const client = contentfulClient();
@@ -12,6 +21,7 @@ async function getSlug(slug) {
       content_type: "ourServices",
       "fields.slug": slug,
     });
+    console.log("slug", res.items);
 
     return res.items;
   } catch (error) {

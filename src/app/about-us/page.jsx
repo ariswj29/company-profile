@@ -1,8 +1,15 @@
 import CardAbout from "@/components/CardAbout";
 import CardTeam from "@/components/CardTeam";
 import Teams from "@/components/sectionAbout/Teams";
-import CompanyOverview from "@/components/sectionHomepage/CompanyOverview";
+import CompanyOverview from "@/components/sectionAbout/CompanyOverview";
 import { contentfulClient } from "@/helpers/contentful-client";
+
+export async function generateMetadata() {
+  return {
+    title: "About Us",
+    description: "About Us",
+  };
+}
 
 async function getAbout() {
   try {
@@ -22,7 +29,7 @@ export default async function HomePage() {
   return (
     <>
       <CompanyOverview />
-      <section className="grid md:grid-cols-2 sm:grid-cols-1 gap-8 p-8 max-w-screen-xl mx-auto items-center">
+      <section className="md:grid md:grid-cols-2 gap-8 p-8 max-w-screen-xl mx-auto items-center">
         {abouts.map((about) => (
           <CardAbout key={about.sys.id} data={about} />
         ))}

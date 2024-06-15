@@ -13,7 +13,7 @@ export default function page() {
       setIsLoading(true);
 
       try {
-        const response = await fetch("https://randomuser.me/api/?results=12");
+        const response = await fetch("https://randomuser.me/api/?results=15");
         const fetchData = await response.json();
         setData(fetchData);
         console.log("fetchData", fetchData);
@@ -31,9 +31,9 @@ export default function page() {
     return (
       <>
         <div className="col-span-2 py-10 max-w-screen-xl mx-auto items-center">
-          <h2 className="font-bold text-4xl py-8"> Teams </h2>
+          <h2 className="font-bold text-4xl p-8"> Teams </h2>
           <div className="grid gap-8">
-            <SkeletonComponent height={300} width={"full"} />
+            <SkeletonComponent className={"px-8"} height={300} width={"full"} />
           </div>
         </div>
       </>
@@ -43,9 +43,9 @@ export default function page() {
   return (
     <section className="grid gap-8 p-8 mb-20 max-w-screen-xl mx-auto items-center">
       <h2 className="font-bold text-4xl py-8"> Teams </h2>
-      <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-8">
-        {data?.results?.map((data, index) => (
-          <CardTeam data={data} index={index} />
+      <div className="grid md:grid-cols-5 grid-cols-2 gap-8">
+        {data?.results?.map((item, index) => (
+          <CardTeam data={item} index={index} />
         ))}
       </div>
     </section>

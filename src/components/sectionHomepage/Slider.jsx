@@ -49,14 +49,14 @@ export default function Slider() {
       modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
       className="mySwiper mb-8 w-full h-[180px] md:h-[calc(100vh-5rem)]"
     >
-      {sliders.map((slider, key) => (
+      {sliders.map((item, key) => (
         <SwiperSlide
           // key={slider.sys.id}
           key={key}
           className="slider_1 md:py-[140px] sm:py-0 px-[0px]"
           style={{
             // backgroundImage: `url(https:${slider.fields.image.fields.file.url})`,
-            backgroundImage: `url('${slider.image}')`,
+            backgroundImage: `url('${item.image}')`,
             textShadow:
               "rgb(61 61 61) 0px 0px 25px, rgb(61 61 61) 0px 0px 15px",
             backgroundSize: "cover",

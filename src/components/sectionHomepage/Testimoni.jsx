@@ -19,8 +19,7 @@ export default async function Testimoni() {
   return (
     <section className="grid md:grid-cols-3 sm:grid-cols-1 gap-8 p-8">
       <h3 className="font-bold text-4xl md:col-span-3 py-4 text-center">
-        {" "}
-        Testimonial{" "}
+        Testimonial
       </h3>
       {testimonis.map((testimoni) => (
         <div
@@ -37,8 +36,7 @@ export default async function Testimoni() {
             />
             <div className="col-span-3">
               <h4 className="font-bold text-xl mt-6">
-                {" "}
-                {testimoni.fields.name}{" "}
+                {testimoni.fields.name}
               </h4>
               <p className="">{testimoni.fields.title}</p>
             </div>

@@ -20,8 +20,7 @@ export default async function Service() {
   return (
     <section className="grid md:grid-cols-3 sm:grid-cols-1 gap-8 p-8">
       <h3 className="font-bold text-4xl md:col-span-3 py-4 text-center">
-        {" "}
-        Our Services{" "}
+        Our Services
       </h3>
       {services.map((service) => (
         <CardService key={service.sys.id} service={service} />

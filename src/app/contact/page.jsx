@@ -1,6 +1,13 @@
 import { socialMedia } from "@/data/data";
 import Link from "next/link";
 
+export async function generateMetadata() {
+  return {
+    title: "Contact Us",
+    description: "Contact Us",
+  };
+}
+
 export default function ContactPage() {
   return (
     <section className="grid gap-4 p-8 mb-20 max-w-screen-xl mx-auto items-center">
