@@ -24,8 +24,8 @@ export default function CardTeam({ data, index }) {
       >
         <Image
           src={data.picture.large}
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           className={`${
             isFlipped
               ? "w-32 h-32 rounded-full"

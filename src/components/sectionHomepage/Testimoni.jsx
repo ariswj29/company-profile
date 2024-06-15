@@ -17,8 +17,8 @@ export default async function Testimoni() {
   const testimonis = await getTestimoni();
 
   return (
-    <section className="grid grid-cols-3 gap-8 p-8">
-      <h3 className="font-bold text-4xl col-span-3 py-4 text-center">
+    <section className="grid md:grid-cols-3 sm:grid-cols-1 gap-8 p-8">
+      <h3 className="font-bold text-4xl md:col-span-3 py-4 text-center">
         {" "}
         Testimonial{" "}
       </h3>
