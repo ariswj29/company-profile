@@ -24,11 +24,11 @@ export default function Header() {
       </div>
       <div className="md:hidden md:col-span-1 sm:col-span-1 py-6 justify-self-end">
         <button
-          class="flex items-center rounded border-2 border-black px-3 py-2"
+          className="flex items-center rounded border-2 border-black px-3 py-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
-            class="h-3 w-3 fill-current"
+            className="h-3 w-3 fill-current"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
