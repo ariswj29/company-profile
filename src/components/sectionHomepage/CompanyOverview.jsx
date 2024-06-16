@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { abouts } from "@/data/data";
+import ButtonLink from "../ButtonLink";
 
 export default function CompanyOverview() {
   return (
@@ -8,11 +9,7 @@ export default function CompanyOverview() {
       <div className="gap-4">
         <h3 className="font-bold text-4xl py-4">Company Overview</h3>
         <p className="text-justify my-4">{abouts[0].description}</p>
-        <Link href="/about-us">
-          <p className="bg-[#5DA295] w-fit px-4 py-2 text-white rounded-lg">
-            Read More
-          </p>
-        </Link>
+        <ButtonLink link={"/about-us"} title="Read More" />
       </div>
       <div className="">
         <Image

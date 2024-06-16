@@ -2,6 +2,7 @@ import { createClient } from "contentful";
 import Link from "next/link";
 import CardService from "../CardService";
 import { contentfulClient } from "@/helpers/contentful-client";
+import ButtonLink from "../ButtonLink";
 
 async function getService() {
   try {
@@ -25,11 +26,11 @@ export default async function Service() {
       {services.map((service) => (
         <CardService key={service.sys.id} service={service} />
       ))}
-      <Link className="md:col-span-3 justify-self-center" href="/services">
-        <p className="bg-[#5DA295] w-fit px-4 py-2 text-white rounded-lg">
-          Read More
-        </p>
-      </Link>
+      <ButtonLink
+        style={"md:col-span-3 justify-self-center"}
+        link={"/services"}
+        title={"Read More"}
+      />
     </section>
   );
 }

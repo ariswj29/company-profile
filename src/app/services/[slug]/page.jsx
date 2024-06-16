@@ -49,8 +49,8 @@ export default async function Page({ params }) {
       <div className="flex flex-col gap-4 rounded-lg items-center p-4">
         <Image
           src={`https:${image.fields.file.url}`}
-          width={400}
-          height={400}
+          width={1000}
+          height={1000}
           className="w-full"
           alt={name}
         />

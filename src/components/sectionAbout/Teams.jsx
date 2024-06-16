@@ -4,6 +4,7 @@ import CardTeam from "@/components/CardTeam";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import SkeletonComponent from "../Skeleton";
+import ButtonLink from "../ButtonLink";
 
 export default function Teams() {
   const [data, setData] = useState(null);
@@ -48,11 +49,7 @@ export default function Teams() {
         ))}
       </div>
       <div className="flex justify-center items-center py-8">
-        <Link className="" href="/teams">
-          <p className="bg-[#5DA295] w-fit px-4 py-2 text-white rounded-lg">
-            View All Teams
-          </p>
-        </Link>
+        <ButtonLink link="/teams" title="View All Teams" />
       </div>
     </div>
   );
